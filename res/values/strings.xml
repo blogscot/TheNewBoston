@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">The New Boston</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="your_total">Your total is 0</string>
+    <string name="add_one">Add one</string>
+    <string name="sub_one">Subtract one</string>
+    <string name="type_command">Type a command</string>
+    <string name="button_results">Try Command</string>
+    <string name="textview_results">invalid</string>
+    <string name="toggle_button">Toggle Button</string>
+    <string name="email_address">Email address(es):</string>    
+    <string name="email_address_hint">Enter email address</string>    
+    <string name="email_title_hint">Enter email title</string>    
+    <string name="persons_name_hint">Enter recipient name</string>    
+    <string name="email_title">Email Title:</string>    
+    <string name="persons_name">Person\'s name:</string>    
+    <string name="email_subject">Email Subject:</string>    
+    <string name="send_email">Send Email</string>    
+    <string name="returned_photo">Captured Photo</string>    
+    <string name="set_wallpaper">Set WallPaper</string>    
+    <string name="take_picture">Take Picture</string>    
+    <string name="camera_app">Set WallPaper</string>
+    <string name="android_question">How much do you like Android?</string>        
+    <string name="sharing_data">Sharing Data</string>        
+    <string name="about_me">About Me</string>
+    <string name="menu_preferences">Preferences</string>             
+    <string name="menu_exit">Exit</string>  
+    <string name="simple_graphics">Simple Graphics</string>  
+    <string name="simple_sounds">Simple Sounds</string>
+    <string name="sliding_drawer">Sliding Drawer</string>
+    <string name="simple_tabs">Simple Tabs</string>              
+    <string name="simple_browser">Simple Browser</string>              
+    <string name="simple_flipper">Simple Flipper</string> 
+    <string name="shared_preferences">Shared Preferences</string>
+    <string name="internal_data">Internal Data Store</string>
+    <string name="external_data">External Data Store</string>
+    <string name="sqlite_example">SQLite Example</string>                   
+    <string name="sql_view">SQL View</string>
+    <string name="accelerate_example">Accelerate Example</string>                       
+</resources>

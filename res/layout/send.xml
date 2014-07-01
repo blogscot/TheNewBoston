@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/android_question" />
+
+    <RadioGroup
+        android:id="@+id/rgAnswers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rGreat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It's great!" />
+
+        <RadioButton
+            android:id="@+id/rLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I like it" />
+
+        <RadioButton
+            android:id="@+id/rMeh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It's not for me" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bReturnData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return" />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+</LinearLayout>

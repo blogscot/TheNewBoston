@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.diamond.iain.thenewboston"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.diamond.iain.thenewboston.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.diamond.iain.thenewboston.MainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.diamond.iain.thenewboston.MENU" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.TextPlay"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.Email"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.Camera"
+            android:label="@string/camera_app"
+            android:screenOrientation="userPortrait" >
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.Data"
+            android:label="@string/sharing_data" >
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.GFX"
+            android:label="@string/simple_graphics" >
+        </activity>        
+        <activity
+            android:name="com.diamond.iain.thenewboston.GFXSurface"
+            android:label="@string/simple_graphics" >
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.SoundStuff"
+            android:label="@string/simple_sounds" >
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.Slider"
+            android:label="@string/sliding_drawer" >
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.Tabs"
+            android:label="@string/simple_tabs" >
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.SimpleBrowser"
+            android:label="@string/simple_browser" >
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.Flipper"
+            android:label="@string/simple_flipper" >
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.SharedPrefs"
+            android:label="@string/shared_preferences" >
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.InternalData"
+            android:label="@string/internal_data" >
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.ExternalData"
+            android:label="@string/external_data" >
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.SQLiteExample"
+            android:label="@string/sqlite_example" >
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.Accelerate"
+            android:label="@string/accelerate_example"
+            android:screenOrientation="userPortrait" >
+        </activity>        
+        <activity
+            android:name="com.diamond.iain.thenewboston.SQLView"
+            android:label="@string/sql_view" >
+            <intent-filter>
+                <action android:name="com.diamond.iain.thenewboston.SQLVIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>                                                                                           
+        <activity
+            android:name="com.diamond.iain.thenewboston.OpenedClass"
+            android:label="@string/sharing_data"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.AboutMe"
+            android:label="@string/about_me" >
+            <intent-filter>
+                <action android:name="com.diamond.iain.thenewboston.ABOUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.diamond.iain.thenewboston.Prefs"
+            android:label="@string/about_me" >
+            <intent-filter>
+                <action android:name="com.diamond.iain.thenewboston.PREFS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>                                                                     
+    </application>
+
+</manifest>
