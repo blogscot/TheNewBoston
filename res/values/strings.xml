@@ -39,5 +39,6 @@
     <string name="external_data">External Data Store</string>
     <string name="sqlite_example">SQLite Example</string>                   
     <string name="sql_view">SQL View</string>
-    <string name="accelerate_example">Accelerate Example</string>                       
+    <string name="accelerate_example">Accelerate Example</string>
+    <string name="http_example">Http Example</string>                            
 </resources>
