@@ -10,12 +10,15 @@ import android.os.Bundle;
 
 public class Accelerate extends Activity implements SensorEventListener {
 
-	private final static long UPDATE_THRESHOLD = 200;
+	private final long UPDATE_THRESHOLD = 200;
+	private final float mAlpha = 0.8f;
 
-	SensorManager manager;
-	Sensor sensor;
-	MySurfaceView ourSurfaceView;
-	long mLastUpdate;
+	private float[] mGravity = new float[2];
+	
+	private SensorManager manager;
+	private Sensor sensor;
+	private MySurfaceView ourSurfaceView;
+	private long mLastUpdate;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +26,11 @@ public class Accelerate extends Activity implements SensorEventListener {
 		super.onCreate(savedInstanceState);
 		setContentView(new MySurfaceView(this));
 		manager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-		if (manager.getSensorList(Sensor.TYPE_ACCELEROMETER).size() != 0) {
-			sensor = manager.getSensorList(Sensor.TYPE_ACCELEROMETER).get(0);
+		
+		if (null == (sensor = manager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER))) {
+			finish();
 		}
-
+			
 		ourSurfaceView = new MySurfaceView(this);
 		ourSurfaceView.resume();
 		setContentView(ourSurfaceView);
@@ -59,13 +63,21 @@ public class Accelerate extends Activity implements SensorEventListener {
 			if (actualTime - mLastUpdate > UPDATE_THRESHOLD) {
 
 				mLastUpdate = actualTime;
+				
+				mGravity[0] = lowPass(event.values[0], mGravity[0]);
+				mGravity[1] = lowPass(event.values[1], mGravity[1]);
 
-				ourSurfaceView.setSensorX(event.values[0]);
-				ourSurfaceView.setSensorY(event.values[1]);
+				ourSurfaceView.setSensorX(mGravity[0]);
+				ourSurfaceView.setSensorY(mGravity[1]);
 			}
 		}
 	}
 
+	// Uses a running average to create a low pass filter
+	private float lowPass(float current, float average) {
+		return average * mAlpha + current * (1 - mAlpha);
+	}
+	
 	@Override
 	public void onAccuracyChanged(Sensor sensor, int accuracy) {
 	}
