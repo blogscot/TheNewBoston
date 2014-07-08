@@ -12,6 +12,7 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.SlidingDrawer;
 import android.widget.SlidingDrawer.OnDrawerOpenListener;
 
+@SuppressWarnings("deprecation")
 public class Slider extends Activity implements OnClickListener, OnCheckedChangeListener, OnDrawerOpenListener {
 
 	SlidingDrawer sd;

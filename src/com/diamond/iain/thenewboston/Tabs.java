@@ -2,7 +2,6 @@ package com.diamond.iain.thenewboston;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -83,8 +82,6 @@ public class Tabs extends Activity implements OnClickListener {
 			ourSpec.setIndicator("New Tab");
 			tabHost.addTab(ourSpec);
 			break;
-
 		}
 	}
-
 }
